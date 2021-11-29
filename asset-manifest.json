@@ -1,20 +1,21 @@
 {
   "files": {
-    "main.css": "/test-task-timer/static/css/main.c7daeb8d.chunk.css",
-    "main.js": "/test-task-timer/static/js/main.7b59b777.chunk.js",
-    "main.js.map": "/test-task-timer/static/js/main.7b59b777.chunk.js.map",
+    "main.css": "/test-task-timer/static/css/main.9a6708a6.chunk.css",
+    "main.js": "/test-task-timer/static/js/main.54fd9d98.chunk.js",
+    "main.js.map": "/test-task-timer/static/js/main.54fd9d98.chunk.js.map",
     "runtime-main.js": "/test-task-timer/static/js/runtime-main.cf3e5173.js",
     "runtime-main.js.map": "/test-task-timer/static/js/runtime-main.cf3e5173.js.map",
     "static/js/2.3b33e72d.chunk.js": "/test-task-timer/static/js/2.3b33e72d.chunk.js",
     "static/js/2.3b33e72d.chunk.js.map": "/test-task-timer/static/js/2.3b33e72d.chunk.js.map",
     "index.html": "/test-task-timer/index.html",
-    "static/css/main.c7daeb8d.chunk.css.map": "/test-task-timer/static/css/main.c7daeb8d.chunk.css.map",
-    "static/js/2.3b33e72d.chunk.js.LICENSE.txt": "/test-task-timer/static/js/2.3b33e72d.chunk.js.LICENSE.txt"
+    "static/css/main.9a6708a6.chunk.css.map": "/test-task-timer/static/css/main.9a6708a6.chunk.css.map",
+    "static/js/2.3b33e72d.chunk.js.LICENSE.txt": "/test-task-timer/static/js/2.3b33e72d.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/test-task-timer/static/media/DS-DIGII.67d08007.TTF"
   },
   "entrypoints": [
     "static/js/runtime-main.cf3e5173.js",
     "static/js/2.3b33e72d.chunk.js",
-    "static/css/main.c7daeb8d.chunk.css",
-    "static/js/main.7b59b777.chunk.js"
+    "static/css/main.9a6708a6.chunk.css",
+    "static/js/main.54fd9d98.chunk.js"
   ]
 }
