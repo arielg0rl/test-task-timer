@@ -1,5 +1,5 @@
 {
-  "homepage": "https://arielg0rl.github.io/react-ts-template",
+  "homepage": "https://arielg0rl.github.io/test-task-timer",
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
@@ -11,6 +11,7 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
+    "rxjs": "^7.4.0",
     "web-vitals": "^1.1.2"
   },
   "scripts": {
@@ -20,7 +21,6 @@
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
-    
   },
   "eslintConfig": {
     "extends": [
