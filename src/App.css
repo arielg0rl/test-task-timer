@@ -1,13 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@font-face {
+  font-family: DS-DIGII;
+  src: url(./DS-DIGII.TTF);
+}
 * {
   box-sizing: border-box;
+  font-size: 3vw;
+  font-family: Roboto, sans-serif;
 }
 
 .container {
-  display: grid;
+  display: flex;
+  justify-content: center;
+  transform: translateY(30%);
 }
 
 .clock {
-  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.clock__button {
+  width: 12vw;
+  font-size: 0.6em;
+  background-color: white;
+  align-self: center;
+  margin: 0 5px;
+  border: 0.08em solid black;
+  border-radius: 0.3em;
+  transition: 0.3s;
+}
+.clock__button:hover {
+  background-color: yellow;
+}
+.clock__time {
+  font-family: DS-DIGII, sans-serif;
+  align-self: center;
 }
 
 /*# sourceMappingURL=App.css.map */

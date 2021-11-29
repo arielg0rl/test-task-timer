@@ -29,17 +29,14 @@ function App() {
     };
   }, [watchOn]);
 
-
   const handleStart = () => {
     setWatchOn(prevState => !prevState);
     setStatus(1);
   }
 
-
   const handleResume = () => {
     handleStart();
   }
-
 
   const handleWait = () => {
     if (time !== 0) {
@@ -47,7 +44,6 @@ function App() {
     }
     setStatus(2);
   }
-
 
   const handleReset = () => {
     setTime(0);
@@ -59,22 +55,16 @@ function App() {
     <div className="App">
       <div className='container'>
         <div className='clock'>
-          <div>Timer</div>
-          <div className='timer'>
-            <Display
-                time={time}
-            />
-            <Button
-                start={handleStart}
-                wait={handleWait}
-                reset={handleReset}
-                resume={handleResume}
-                status={status}
-            />
-          </div>
+          <Display time={time} />
+          <Button
+            start={handleStart}
+            wait={handleWait}
+            reset={handleReset}
+            resume={handleResume}
+            status={status}
+          />
         </div>
       </div>
-      
     </div>
   );
 }

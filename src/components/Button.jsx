@@ -4,27 +4,27 @@ function Button({ start, wait, reset, resume, status }) {
   return (
       <div>
           {(status === 0) ?
-            <button onClick={start}>Start</button>
+            <button className='clock__button' onClick={start}>Start</button>
             : ""
           }
 
           {(status === 1) ?
             <div>
-              <button
+              <button className='clock__button'
                 onClick={wait}
               >
                 Wait
               </button>
 
-              <button onClick={reset}>Reset</button>
+              <button className='clock__button' onClick={reset}>Reset</button>
             </div>
             : ""
           }
 
           {(status === 2) ?
             <div>
-              <button onClick={resume}>Resume</button>
-              <button onClick={reset}>Reset</button>
+              <button className='clock__button' onClick={resume}>Resume</button>
+              <button className='clock__button' onClick={reset}>Reset</button>
             </div>
             : ""
           }
