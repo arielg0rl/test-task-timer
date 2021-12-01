@@ -12,6 +12,7 @@ function App() {
   const [time, setTime] = useState(0);
   const [watchOn, setWatchOn] = useState(false);
   const [status, setStatus] = useState(0);
+  const [isClickedOnce, setIsClickedOnce] = useState(false);
 
   useEffect(() => {
 
@@ -34,21 +35,28 @@ function App() {
     setStatus(1);
   }
 
-  const handleResume = () => {
-    handleStart();
-  }
-
   const handleWait = () => {
-    if (time !== 0) {
+    setIsClickedOnce(true);
+    setTimeout(() => {
+      setIsClickedOnce(false);
+    }, 300);
+
+    if (time !== 0 && isClickedOnce) {
       setWatchOn(false);
+      setStatus(2);
     }
-    setStatus(2);
   }
 
   const handleReset = () => {
     setTime(0);
+    setWatchOn(true);
+    setStatus(1);
+  }
+
+  const handleStop = () => {
+    setTime(0);
     setWatchOn(false);
-    setStatus(0);
+    setStatus(2);
   }
 
   return (
@@ -60,7 +68,7 @@ function App() {
             start={handleStart}
             wait={handleWait}
             reset={handleReset}
-            resume={handleResume}
+            stop={handleStop}
             status={status}
           />
         </div>
